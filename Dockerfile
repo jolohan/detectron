@@ -22,6 +22,10 @@ RUN make install
 WORKDIR /Detectron
 ADD . /Detectron
 
+# Or clone git repo
+#RUN git clone https://github.com/jolohan/detectron.git /Detectron
+
+
 # install cython
 RUN sudo pip install cython scikit-image easydict
 # build cython extension
